@@ -1,0 +1,86 @@
+body{
+   margin: 0;
+   padding: 0;
+   line-height: 1.5;
+   font-family: "Montserrat", sans-serif;
+   //font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+   &.active{
+      overflow: hidden;
+   }
+}
+
+
+*,
+*::before,
+*::after{
+   box-sizing: border-box;
+   padding: 0;
+   margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6{
+   margin: 0;
+}
+
+a{
+   text-decoration: none;
+   display: inline-block;
+}
+
+ul li{
+   margin: 0;
+   padding: 0;
+   list-style-type: none;
+}
+
+img{
+   display: block;
+   max-width: 100%;
+}
+
+.btn {
+   font-family: inherit;
+   color: #FFFFFF;
+
+   text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.5);
+   background-color: #FFA800;
+   border: none;
+   cursor: pointer;
+
+   transition: background-color .2s linear;
+
+   &:hover{
+      background-color: #FFC34E;
+   }
+
+   &:active{
+      background: #FFA800;
+      box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.25);
+   }
+}
+
+.title{
+   font-weight: 700;
+   font-size: 44px;
+   line-height: 1.2;
+   letter-spacing: 0.2px;
+   color: #FFFFFF;
+}
+
+@media (max-width: 698px) {
+   .title{
+      font-size: 25px;
+      text-align: center;
+   }
+}
+
+.none{
+   display: none;
+}
+
+.container{
+   position: relative;
+
+   @include min-max(320px, 1430px, 15px);
+}

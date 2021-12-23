@@ -1,0 +1,113 @@
+body{
+   margin: 0;
+   padding: 0;
+   line-height: 1.5;
+   font-family: 'Montserrat', sans-serif;
+   font-weight: 400;
+   // font-family: 'Fira Sans', sans-serif;
+   //font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+body.active{
+   overflow: hidden;
+}
+
+*,
+*::before,
+*::after{
+   box-sizing: border-box;
+   padding: 0;
+   margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6{
+   margin: 0;
+   font-weight: 400;
+}
+
+a{
+   text-decoration: none;
+   display: block;
+}
+
+ul li{
+   margin: 0;
+   padding: 0;
+   list-style-type: none;
+}
+
+img{
+   display: block;
+   max-width: 100%;
+}
+
+.btn{
+   display: block;
+
+   padding-top: 20px;
+   padding-bottom: 20px;
+
+   width: 220px;
+
+   border-radius: 7px;
+   border: 1px solid #03BCFC;
+
+   text-align: center;
+   font-size: 16px;
+   line-height: 1;
+   color: #4F4F4F;
+   cursor: pointer;
+
+   transition: background-color .2s linear, color .2s linear;
+
+   &:hover{
+      background-color: #03BCFC;
+      color: #fff;
+   }
+
+   &:active{
+      background: #078FF2;
+      color: #fff;
+   }
+}
+
+.title{
+   @include font-firaSans;
+   font-size: 35px;
+   line-height: 1.2;
+   text-align: center;
+   color: #000;
+}
+
+.container{
+   @include min-max(320px, 1320px, 15px);
+}
+
+@media (max-width: 604px) {
+
+   .btn{
+      width: 170px;
+
+      padding-top: 14px;
+      padding-bottom: 14px;
+   }
+
+   .title{
+      font-size: 27px;
+   }
+
+}
+
+
+@media (max-width: 515px) {
+   .title{
+      font-size: 24px;
+   }
+}
+
+
+
+
+.none {
+   display: none !important;
+}

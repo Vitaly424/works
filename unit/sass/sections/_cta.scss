@@ -1,0 +1,60 @@
+.cta {
+   @include bg-image("../img/bg/cta-bg.jpg");
+
+   position: relative;
+   
+   padding-top: 84px;
+   padding-bottom: 84px;
+
+   @media (max-width: $screen-lg) {
+      @include bg-image("../img/bg/cta-bg-1600.jpg");
+   }
+
+   @media (max-width: $screen-tablet) {
+      @include bg-image("../img/bg/cta-bg-900.jpg");
+      min-height: 202px;
+
+      padding-top: 40px;
+      padding-bottom: 40px;
+   }
+
+   @media (max-width: $screen-mobile) {
+      @include bg-image("../img/bg/cta-bg-600.jpg");
+      min-height: 190px;
+   }
+   
+   @media (max-width: $screen-xs) {
+      @include bg-image("../img/bg/cta-bg-320.jpg");
+   }
+   
+   &__content {
+      position: relative;
+      z-index: 10;
+
+      text-align: center;
+      color: #ffffff;
+   }
+
+   &__title {
+      margin-bottom: 40px;
+
+      font-weight: 500;
+      font-size: 22px;
+      line-height: 1;
+
+      @media (max-width: $screen-mobile) {
+         margin-bottom: 30px;
+         font-size: 20px;
+      }
+
+      @media (max-width: $screen-xs) {
+         margin-bottom: 20px;
+         font-size: 18px;
+      }
+   }
+
+   span {
+      text-transform: uppercase;
+      font-weight: 700;
+   }
+}

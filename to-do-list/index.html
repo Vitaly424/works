@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="stylesheet" href="style.css">
+ 
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,900&display=swap" rel="stylesheet">
+
+        <title>Планировщик задач</title>
+    </head>
+    <body>
+
+        <header class="header" id="main-header" >
+            <div class="container">
+
+                <div class="header__row">
+                    <div class="header__item">
+                        <h1 class="header__title">Планировщик</h1>
+                    </div>
+                    <div class="header__item">
+                        <input
+                            type="text"
+                            class="header__control"
+                            id="filter"
+                            placeholder="Поиск по списку..."
+                        />
+                    </div>
+                </div><!-- header__row -->
+
+            </div><!-- container -->
+        </header><!-- header -->
+
+        <div class="container  content">
+            <div id="main" class="content__body">
+    
+                <form id="addForm" class="content__form">
+                    <input
+                        type="text"
+                        class="content__input-form"
+                        placeholder="Добавить задачу"
+                        id="newItemText"
+                    />
+                    <input
+                        type="submit"
+                        class="content__form-btn"
+                        value="Добавить"
+                    />
+                </form>
+
+                <div class="content__header">
+                    <h3 class="content__title">Список дел</h3>
+                    <button class="content__btn-delete-all"  type="button" id="all-delete">Удалить всё</button>
+                </div>
+         
+                <ul class="content__list" id="items" >
+             
+                </ul>
+
+            </div><!-- content__body -->
+        </div><!-- content -->
+`
+        <script src="main.js"></script>
+    </body>
+</html>
+
+ 

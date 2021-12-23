@@ -1,0 +1,22 @@
+.button {
+   padding: 15px 40px;
+   
+   color: #ffffff;
+   text-transform: uppercase;
+
+   background-color: #3770C7;
+   transition: background-color .2s linear;
+
+   @include hover {
+      background-color: darken(#3770C7, 10%);
+   }
+
+   &--remove {
+      background-color: #ff0000;
+
+      @include hover {
+         background-color: darken(#ff0000, 10%);
+      }
+   }
+}
+ 

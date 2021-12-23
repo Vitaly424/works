@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<!-- encoding -->
+	<meta charset="UTF-8" />
+	<!-- Mobile support -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<!-- Title and SEO -->
+	<title>Проект Юнит - таскменеджер</title>
+	<meta name="description" content="Описание страницы" />
+	<meta name="keywords" content="ключевые слова, фразы" />
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="./css/main.css" />
+
+	<!-- Open Graph -->
+	<meta property="og:url" content=".." />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Заголовок" />
+	<meta property="og:description" content="Описание" />
+	<meta property="og:image" content="./img/opengraph.jpg"/>
+
+	<!-- Favicons -->
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+	<link rel="manifest" href="img/favicons/site.webmanifest">
+	<link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+	<link rel="shortcut icon" href="img/favicons/favicon.ico">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="msapplication-config" content="img/favicons/browserconfig.xml">
+	<meta name="theme-color" content="#ffffff">
+
+</head>
+
+<body id="js-body">
+
+	<header class="header  darkening-bg" id="header">
+		<div class="header__wrapper">
+
+			<div class="header__buttons">
+				<button class="nav-icon" id="js-nav-icon">
+					<span class="nav-icon__middle"></span>
+				</button>
+
+				<nav class="nav" id="js-nav">
+					<p class="nav__title">навигация по сайту</p>
+					<ul class='nav__list'>
+						<li class="nav__item">
+							<a class="nav__link" href="#functional">Функционал</a>
+						</li>
+						<li class="nav__item">
+							<a class="nav__link" href="#tasks">Гибкое управление</a>
+						</li>
+						<li class="nav__item">
+							<a class="nav__link" href="#focus">Всегда в фокусе</a>
+						</li>
+						<li class="nav__item">
+							<a class="nav__link" href="#price">Цены</a>
+						</li>
+						<li class="nav__item">
+							<a class="nav__link" href="#clients">Отзывы клиентов</a>
+						</li>
+					</ul>
+				</nav>
+				 
+				<form class="search" id="js-search-form">
+					<input class="search__input"  id="js-search-input"  type="text" placeholder="Введите текст для поиска">
+					<button class="search__button" id="js-search-button" type="submit">
+						<svg width="20" height="20" fill="none">
+							<g class="search__icon">
+								<path fill-rule="evenodd" clip-rule="evenodd"
+									d="M7.70001 13.2C10.7376 13.2 13.2 10.7375 13.2 7.69995C13.2 4.66239 10.7376 2.19995 7.70001 2.19995C4.66245 2.19995 2.20001 4.66239 2.20001 7.69995C2.20001 10.7375 4.66245 13.2 7.70001 13.2Z"
+									stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+								<path d="M16.8 18.4L11.2 12" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+							</g>
+						</svg>
+					</button>
+				</form>
+			</div>
+
+			<div class="header__content  container">
+				<h1 class="header__title  animate__animated  animate__rollIn">ЮНИТ</h1>
+
+				<div class="header__desk">
+					<p>
+						Управляй задачами и проектами из любой точки вместе с ЮНИТ.
+						Дома. На работе. В дороге. Онлайн. Оффлайн.
+					</p>
+				</div>
+
+				<form class="header__form">
+					<input class="header__form-input  input" type="text" placeholder="Ваше имя">
+					<input class="header__form-input  input" type="email" placeholder="Email">
+
+					<button class="button" type="submit">Начать триал</button>
+				</form>
+			</div>
+
+			<div class="header__scroll">
+				<a href="#functional">
+					<img src="./img/header/mouse.svg" alt="Scroll down">
+				</a>
+			</div>
+		</div>
+	</header>
+
+	<main>
+		<section class="functional" id="functional">
+
+			<div class="container">
+				<header class="functional__header">
+					<h2 class="functional__title  title">функционал</h2>
+					<h3 class="subtitle animate__animated">Получайте больше</h3>
+				</header>
+
+				<div class="functional__row">
+
+					<div class="card  animate__animated  animate__backInLeft  wow">
+						<img class="card__img" src="./img/functional/file-check.svg" alt="Создан для управления">
+						<h4 class="card__title">Создан для управления</h4>
+						<div class="card__desk">
+							<p class="card__text">
+								Согласно ставшей уже классической работе Филипа Котлера, рекламная площадка отталкивает рейтинг.
+							</p>
+						</div>
+					</div> <!-- card -->
+
+					<div class="card  animate__animated  animate__backInLeft  wow">
+						<img class="card__img" src="./img/functional/microphone.svg" alt="Голосовое управление">
+						<h4 class="card__title">Голосовое управление</h4>
+						<div class="card__desk">
+							<p class="card__text">
+								Согласно ставшей уже классической работе Филипа Котлера, рекламная площадка отталкивает рейтинг.
+							</p>
+						</div>
+					</div> <!-- card -->
+
+					<div class="card  animate__animated  animate__backInRight  wow">
+						<img class="card__img" src="./img/functional/money.svg" alt="Контроль бюджета">
+						<h4 class="card__title">Контроль бюджета</h4>
+						<div class="card__desk">
+							<p class="card__text">
+								Согласно ставшей уже классической работе Филипа Котлера, рекламная площадка отталкивает рейтинг.
+							</p>
+						</div>
+					</div> <!-- card -->
+
+					<div class="card  animate__animated  animate__backInRight  wow">
+						<img class="card__img" src="./img/functional/chart-pie.svg" alt="Статистика и графики">
+						<h4 class="card__title">Статистика и графики</h4>
+						<div class="card__desk">
+							<p class="card__text">
+								Согласно ставшей уже классической работе Филипа Котлера, рекламная площадка отталкивает рейтинг.
+							</p>
+						</div>
+					</div> <!-- card -->
+
+				</div>
+			</div>
+
+		</section><!-- functional -->
+
+		<section class="cta  darkening-bg">
+			<div class="cta__content">
+				<div class="container">
+					<h2 class="cta__title">Начните использовать <span>ЮНИТ</span> уже сегодня.</h2>
+					<a class="button  button--link" href="#price">подключить</a>
+				</div>
+			</div>
+		</section><!-- cta -->
+
+		<section class="tasks" id="tasks">
+			<div class="container">
+
+				<div class="tasks__row">
+					<div class="tasks__content  animate__animated  animate__backInLeft  wow">
+						<header class="tasks__header">
+							<h2 class="tasks__title  title">гибкое управление</h2>
+							<h3 class="subtitle">Задачи и подзадачи</h3>
+						</header>
+
+						<div class="tasks__text">
+							<p>Тактика выстраивания отношений с коммерчекими агентами, вопреки мнению П.Друкера, искажает
+								продвигаемый отраслевой стандарт. Стратегический рыночный план традиционно масштабирует
+								комплексный имидж. Спонсорство развивает формат события.</p>
+						</div>
+					</div>
+
+					<div class="tasks__img  animate__animated  animate__backInRight  wow">
+						<img src="./img/devices/iphone.jpg" alt="iphone">
+					</div>
+				</div>
+
+			</div>
+		</section><!-- tasks -->
+
+		<section class="focus" id="focus">
+			<div class="container">
+				<div class="focus__row">
+
+					<div class="focus__img  animate__animated  animate__backInLeft  wow">
+						<img src="./img/devices/ipad.jpg" alt="ipad">
+					</div>
+
+					<div class="focus__content  animate__animated  animate__backInRight  wow">
+						<header class="focus__header">
+							<h3 class="focus__title  title">всегда в фокусе</h3>
+							<h2 class="subtitle">Множественные приоритеты</h2>
+						</header>
+
+						<div class="focus__text">
+							<p>
+								Потребление существенно продуцирует рыночный традиционный канал. В соответствии с законом Ципфа,
+								маркетинг основан на тщательном анализе данных. Наряду с этим, целевой трафик
+								конкурентоспособен.
+							</p>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</section><!-- focus -->
+
+		<section class="price  darkening-bg" id="price">
+			<div class="price__content">
+				<div class="container">
+					<header class="price__header">
+						<h2 class="price__title  title  title--white">цены</h2>
+						<h3 class="subtitle  subtitle--white">Выберите подходящий план</h3>
+					</header>
+
+					<div class="price__row">
+
+						<div class="package  animate__animated  animate__backInLeft  wow">
+							<div class="package__header">
+								<h4 class="package__title">базовый</h4>
+								<span class="package__price">15</span>
+								<span class="package__period">$/мес</span>
+							</div>
+
+							<ul class="package__list">
+								<li class="package__list-item">10 проектов</li>
+								<li class="package__list-item">5 участников</li>
+								<li class="package__list-item">∞ количество задач</li>
+								<li class="package__list-item">5 GB медиа хранилище</li>
+								<li class="package__list-item">Поддержка по Email</li>
+							</ul>
+
+							<div class="package__button">
+								<button class="button  button--outline">Выбрать</button>
+							</div>
+						</div><!-- package -->
+
+						<div class="package  animate__animated  animate__fadeInUp  wow  package--special">
+							<div class="package__header">
+								<h4 class="package__title">стандарт</h4>
+								<span class="package__price">65</span>
+								<span class="package__period">$/мес</span>
+							</div>
+
+							<ul class="package__list">
+								<li class="package__list-item">50 проектов</li>
+								<li class="package__list-item">5 участников</li>
+								<li class="package__list-item">∞ количество задач</li>
+								<li class="package__list-item">25 GB медиа хранилище</li>
+								<li class="package__list-item">Поддержка по Email</li>
+							</ul>
+
+							<div class="package__button">
+								<button class="button  button--solid">Выбрать</button>
+							</div>
+						</div><!-- package -->
+
+						<div class="package  animate__animated  animate__backInRight  wow">
+							<div class="package__header">
+								<h4 class="package__title">премиум</h4>
+								<span class="package__price">125</span>
+								<span class="package__period">$/мес</span>
+							</div>
+
+							<ul class="package__list">
+								<li class="package__list-item">100 проектов</li>
+								<li class="package__list-item">30 участников</li>
+								<li class="package__list-item">∞ количество задач</li>
+								<li class="package__list-item">50 GB медиа хранилище</li>
+								<li class="package__list-item">Поддержка по Email</li>
+							</ul>
+
+							<div class="package__button">
+								<button class="button  button--outline">Выбрать</button>
+							</div>
+						</div><!-- package -->
+
+					</div><!-- price__row -->
+				</div><!-- container -->
+			</div><!-- price__content -->
+		</section><!-- price -->
+
+		<section class="clients" id="clients">
+
+			<div class="container">
+				<header class="clients__header">
+					<h2 class="clients__title  title">наши клиенты</h2>
+					<h3 class="subtitle">Что говорят пользователи</h3>
+				</header>
+
+				<div class="clients__box">
+					<div class="clients__slider  swiper" id="js-clients-slider">
+
+						<div class="swiper-wrapper">
+
+							<div class="slider-item swiper-slide">
+								<p class="slider-item__text">
+									Это потрясающее приложение которое помогло мне завершить все мои дела, и&nbsp;сделать
+									дипломный проект раньше срока.
+								</p>
+								<div class="slider-item__author">
+									<div class="slider-item__avatar">
+										<img src="./img/user/01.jpg" alt="Avatar">
+									</div>
+									<div class="slider-item__info">
+										<span class='slider-item__speciality'>Фрилансер</span>
+										<p class='slider-item__name'>Николай Остапов</p>
+									</div>
+								</div>
+							</div><!-- slider-item -->
+
+							<div class="slider-item swiper-slide">
+								<p class="slider-item__text">
+									Это потрясающее приложение которое помогло мне завершить все мои дела, и&nbsp;сделать
+									дипломный проект раньше срока.
+								</p>
+								<div class="slider-item__author">
+									<div class="slider-item__avatar">
+										<img src="./img/user/01.jpg" alt="Avatar">
+									</div>
+									<div class="slider-item__info">
+										<span class='slider-item__speciality'>Фрилансер</span>
+										<p class='slider-item__name'>Николай Остапов</p>
+									</div>
+								</div>
+							</div><!-- slider-item -->
+
+							<div class="slider-item swiper-slide">
+								<p class="slider-item__text">
+									Это потрясающее приложение которое помогло мне завершить все мои дела, и&nbsp;сделать
+									дипломный проект раньше срока.
+								</p>
+								<div class="slider-item__author">
+									<div class="slider-item__avatar">
+										<img src="./img/user/01.jpg" alt="Avatar">
+									</div>
+									<div class="slider-item__info">
+										<span class='slider-item__speciality'>Фрилансер</span>
+										<p class='slider-item__name'>Николай Остапов</p>
+									</div>
+								</div>
+							</div><!-- slider-item -->
+
+						</div>
+					</div><!-- slider -->
+					<div class="swiper-pagination"></div>
+
+					<button class="slider__arrow  slider__arrow--left">
+						<svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+							<g>
+								<path d="M20 12H4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M10 18L4 12L10 6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+							</g>
+						</svg>
+					</button>  
+			 
+					<button class="slider__arrow  slider__arrow--right">
+						<svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+							<g>
+								<path d="M4 12H20" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M14 6L20 12L14 18"  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+							</g>
+						</svg>
+					</button>
+				</div>
+
+			</div><!-- container -->
+		</section><!-- clients -->
+
+	</main>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__row">
+
+				<nav class="footer__nav">
+					<a class='footer__nav-item' href="#tasks">о нас</a>
+					<a class='footer__nav-item' href="#focus">блог</a>
+					<a class='footer__nav-item' href="#header">контакты</a>
+				</nav>
+
+				<div class="footer__socials">
+
+					<a class="footer__socials-link" href="#">
+						<img src="./img/social/twitter.svg" alt="twitter">
+					</a>
+
+					<a class="footer__socials-link" href="#">
+						<img src="./img/social/facebook.svg" alt="facebook">
+					</a>
+
+					<a class="footer__socials-link" href="#">
+						<img src="./img/social/instagram.svg" alt="instagram">
+					</a>
+
+					<a class="footer__socials-link" href="#">
+						<img src="./img/social/vk.svg" alt="vk">
+					</a>
+
+				</div>
+
+			</div><!-- footer__row -->
+
+			<div class="footer__copyright">
+				<p>Копирайт &copy; 2019 <span>ЮНИТ</span>. Все права защищены.</p>
+			</div>
+
+		</div><!-- container -->
+	</footer><!-- footer -->
+ 
+	<script src="./js/libs/swiper.bundle.min.js"></script>
+	<script src="./js//libs/wow.min.js"></script>
+	<script src="./js/main.min.js"></script>
+</body>
+
+</html>

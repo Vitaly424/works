@@ -1,0 +1,137 @@
+.focus {
+   padding-top: 80px;
+   padding-bottom: 40px;
+
+   @media (max-width: $screen-tablet) {
+      padding-top: 50px;
+      padding-bottom: 20px;
+   }
+
+   @media (max-width: $screen-mobile) {
+      overflow-x: hidden;
+      padding-bottom: 0;
+   }
+
+   @media (max-width: $screen-xs) {
+      padding-top: 40px;
+      padding-bottom: 40px;
+   }
+
+   &__row {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+
+      & > * {
+         flex-shrink: 0;
+      }
+
+      @media (max-width: $screen-mobile) {
+         flex-direction: row-reverse;
+      }
+
+      @media (max-width: $screen-xs) {
+         flex-direction: column;
+      }
+   }  
+
+   &__img {
+      img {
+         @media (max-width: $screen-mobile) {
+            max-width: unset;
+            width: 415px;
+         }
+
+         @media (max-width: $screen-xs) {
+            max-width: 100%;
+
+            margin-left: auto;
+            margin-right: auto;
+         }
+      }
+
+      @media (max-width: $screen-tablet) {
+         width: 420px;
+      }
+
+      @media (max-width: $screen-mobile) {
+         width: 170px;
+      }
+
+      @media (max-width: $screen-xs) {
+         margin-bottom: 10px;
+         width: 100%;
+      }
+   }
+
+   &__content {
+      padding-top: 28px;
+      width: 470px;
+
+      @media (max-width: $screen-tablet) {
+         width: 420px;
+         padding-top: 20px;
+      }
+
+      @media (max-width: $screen-mobile) {
+         padding-top: 0;
+         width: 370px;
+      }
+
+      @media (max-width: $screen-xs) {
+         width: 100%;
+         text-align: center;
+      }
+   }
+
+   &__header,
+   &__title {
+      margin-bottom: 30px;
+
+      @media (max-width: $screen-mobile) {
+         margin-bottom: 20px;
+      }
+   }
+
+   &__header {
+      @media (max-width: $screen-tablet) {
+         margin-bottom: 20px;
+      }
+   }
+
+   &__title {
+      @media (max-width: $screen-tablet) {
+         margin-bottom: 22px;
+      };
+
+      @media (max-width: $screen-xs) {
+         margin-bottom: 10px;
+      }
+   }
+
+   &__text {
+      max-width: 400px;
+
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 2.1;
+      color: $paragraphColor;
+
+      & > *:not(:last-child) {
+         margin-bottom: 15px;
+      }
+
+      @media (max-width: $screen-tablet) {
+         max-width: 420px;
+      }
+
+      @media (max-width: $screen-mobile) {
+         line-height: 1.7;
+      }
+
+      @media (max-width: $screen-xs) {
+         margin-left: auto;
+         margin-right: auto;
+      }
+   }
+}

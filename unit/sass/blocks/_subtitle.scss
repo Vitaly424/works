@@ -1,0 +1,21 @@
+.subtitle {
+   font-weight: 700;
+   font-size: 48px;
+   line-height: 1;
+
+   &--white {
+      color: #ffffff;
+   }
+
+   @media (max-width: $screen-tablet) {
+      font-size: 38px;
+   }
+
+   @media (max-width: $screen-mobile) {
+      font-size: 30px;
+   }
+
+   @media (max-width: $screen-xs) {
+      font-size: 26px;
+   }
+}

@@ -1,0 +1,10 @@
+.info {
+   display: flex;
+   justify-content: space-between;
+   
+   margin-bottom: 18px;
+
+   &__length {
+      font-size: 18px;
+   }
+}

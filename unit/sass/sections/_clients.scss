@@ -1,0 +1,86 @@
+.clients {
+   padding-top: 80px;
+   padding-bottom: 80px;
+
+   @media (max-width: $screen-tablet) {
+      padding-top: 50px;
+      padding-bottom: 50px;
+   }
+
+   @media (max-width: $screen-xs) {
+      padding-top: 40px;
+      padding-bottom: 70px;
+   }
+
+   &__header {
+      margin-bottom: 60px;
+      text-align: center;
+
+      @media (max-width: $screen-tablet) {
+         margin-bottom: 50px;
+      }
+
+      @media (max-width: $screen-mobile) {
+         margin-bottom: 40px;
+      }
+
+      @media (max-width: $screen-xs) {
+         margin-bottom: 30px;
+      }
+   }
+
+   &__title  {
+      margin-bottom: 40px;
+
+      @media (max-width: $screen-tablet) {
+         margin-bottom: 30px;
+      }
+
+      @media (max-width: $screen-mobile) {
+         margin-bottom: 20px;
+      }
+
+      @media (max-width: $screen-xs) {
+         margin-bottom: 10px;
+      }
+   }
+
+   &__box {
+      position: relative;
+      width: 770px;
+
+      margin-left: auto;
+      margin-right: auto;
+
+      @media (max-width: $screen-tablet) {
+         width: 720px;   
+      }
+      
+      @media (max-width: $screen-mobile) {
+         width: 370px;
+      }
+
+      @media (max-width: $screen-xs) {
+         width: 290px;
+      }
+
+      .swiper-pagination {
+         bottom: -50px;
+
+         .swiper-pagination-bullet {
+            width: 14px;
+            height: 14px;
+
+            background-color: #9c9393;
+
+            &.swiper-pagination-bullet-active {
+               background-color: #00C470;
+            }
+         }
+
+         @media (max-width: $screen-tablet) {
+            bottom: -38px;
+         }
+      }
+   }
+}

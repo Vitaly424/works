@@ -1,0 +1,118 @@
+.portfolio {
+   padding-top: 100px;
+   padding-bottom: 100px;
+
+   background-color: #393F44;
+
+   clip-path: polygon(50% 0, 100% 4%, 100% 96%, 50% 100%, 50% 100%, 0 96%, 0 4%);
+}
+
+.portfolio__title{
+   color: #fff;
+}
+
+.portfolio__navigation-box{
+   margin-top: 43px;
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.portfolio__btn-next.swiper-button-next::after, .portfolio__btn-prev.swiper-button-prev::after{
+   position: static;
+   content: '';
+   display: none;
+}
+ 
+.portfolio__btn-next.swiper-button-next, .portfolio__btn-prev.swiper-button-prev {
+   position: static;
+   width: 47px;
+   height: 42px;
+   margin-top: 0;
+
+   transition: transform .2s linear;
+}
+
+ 
+.portfolio__btn-next.swiper-button-next:hover{
+   transform: translateX(3px);
+}
+
+.portfolio__btn-prev.swiper-button-prev:hover{
+   transform: translateX(-3px);
+}
+ 
+.portfolio__pagination.swiper-pagination{
+   margin-left: 58px;
+   margin-right: 58px;
+
+   display: flex;
+   align-items: center;
+   position: static;
+}
+
+.portfolio__pagination .swiper-pagination-bullet{
+   width: 24.33px;
+   height: 23px;
+
+   border-radius: 0;
+
+   background-color: transparent;
+   border: 3px solid #FFFFFF; 
+   opacity: 1;
+
+   &:not(:last-child) {
+      margin-right: 12px;
+   }
+
+   &.swiper-pagination-bullet-active{
+      width: 39px;
+      height: 37px;
+      background-color: #FFA800;
+      border: 3px solid transparent;
+      opacity: 1;
+   }
+}
+
+.portfolio__title{
+   margin-bottom: 33px;
+}
+
+@media (max-width: 1148px) {
+   .portfolio{
+      clip-path: none;
+   }   
+}
+
+@media (max-width: 960px) {
+   .portfolio {
+      padding-top: 70px;
+      padding-bottom: 70px;
+   }
+   
+}
+
+@media (max-width: 640px) {
+   .portfolio {
+      padding-top: 50px;
+      padding-bottom: 50px;
+   }
+
+   .portfolio__btn-prev.swiper-button-prev, .portfolio__btn-next.swiper-button-next {
+      display: none;
+   }
+
+   .portfolio__pagination .swiper-pagination-bullet{
+      width: 18px;
+      height: 17px;
+   }
+   .portfolio__pagination .swiper-pagination-bullet.swiper-pagination-bullet-active{
+      width: 24px;
+      height: 23px;
+   }
+   .portfolio__navigation-box{
+      margin-top: 16px;
+   }
+}
+

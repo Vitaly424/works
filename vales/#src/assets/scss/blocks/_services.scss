@@ -1,0 +1,150 @@
+.services{
+   margin-top: -45px;
+
+   padding-top: 110px;
+   padding-bottom: 110px;
+
+   background-color: #393F44;
+   clip-path: polygon(50% 0, 100% 4%, 100% 96%, 50% 100%, 50% 100%, 0 96%, 0 4%);
+}
+
+.services__row{
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-column-gap: 65px;
+   grid-row-gap: 30px;
+}
+
+.services__item{
+   position: relative;
+
+   min-height: 420px;
+
+   box-shadow: 3px -3px 30px #000;
+}
+
+.services__item-img{
+   height: 100%;
+   width: 100%;
+   object-fit: cover;
+}
+
+.services__item-text{
+   display: flex;
+   align-items: center;
+
+   position: absolute;
+   left: 0;
+   bottom: -2px;
+
+   background-color: #393F44;
+
+   padding-right: 10px;
+   padding: 10px;
+
+   max-width: 100%;
+   width: 100%;
+   min-height: 104px;
+
+   color: #fff;
+   font-size: 30px;
+   font-weight: 700;
+   line-height: 1.2;
+}
+
+.services__item-one{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.services__title{
+   position: relative;
+
+   max-width: 192px;
+
+   font-weight: 700;
+   font-size: 44px;
+   line-height: 1.2;
+   letter-spacing: 0.2px;
+   color: #FFFFFF;
+
+   &::before,
+   &::after{
+      content: '';
+      position: absolute;
+
+      background-color: #fff;
+   }
+
+   &::before {
+      bottom: 165px;
+      right: -16px;
+      width: 275px;
+      top: -67px;
+      height: 5px;
+   }
+   
+   &::after {
+      right: 259px;
+      top: -67px;
+      width: 5px;
+      height: 250px;
+   }
+
+}
+
+
+
+
+@media (max-width: 1250px) {
+   .services__row {
+      grid-column-gap: 30px;
+   }
+}
+
+ 
+@media (max-width: 1148px) {
+   .services__row {
+      grid-template-columns: 1fr 1fr;
+   }
+   .services{
+      padding-top: 70px;
+      padding-bottom: 70px;
+
+      margin-top: 0;
+      clip-path: none;
+   }
+}
+
+@media (max-width: 852px) {
+   .services__title::after{
+      display: none;
+   }
+   .services__title::before{
+      display: none;
+   }
+   .services__item{
+      min-height: 322px;
+   }
+}
+
+@media (max-width: 754px) {
+   .services__item-text{
+      font-size: 25px;
+   }
+
+   .services{
+      padding-top: 50px;
+      padding-bottom: 50px;
+   }
+}
+ 
+
+@media (max-width: 590px) {
+   .services__row {
+      grid-template-columns: 1fr;
+   }
+}
+
+ 

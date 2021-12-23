@@ -1,0 +1,11 @@
+.header {
+   padding-top: 49px;
+   padding-bottom: 49px;
+
+   background-color: #3770C7;
+
+   @media (max-width: $screen-md) {
+      padding-top: 25px;
+      padding-bottom: 25px;
+   }
+}

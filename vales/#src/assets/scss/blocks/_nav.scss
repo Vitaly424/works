@@ -1,0 +1,47 @@
+.nav__list{
+   display: flex;
+   
+}
+
+.nav__item:not(:last-child){
+   margin-right: 100px;
+}
+
+.nav__link{
+   font-weight: 600;
+   color: #fff;
+   line-height: 1;
+   font-size: 20px;
+
+   transition: color .2s linear;
+
+   &:hover{
+      color: #FFA800;
+   }
+}
+
+@media (max-width: 1394px) {
+   .nav__link{
+      font-size: 16px;
+   }
+}
+
+@media (max-width: 1312px) {
+   .nav__item:not(:last-child){
+      margin-right: 63px;
+   }
+}
+
+@media (max-width: 1042px) {
+   .nav__item:not(:last-child){
+      margin-right: 40px;
+   } 
+}
+
+ 
+@media (max-width: 986px) {
+   .nav__list{
+      display: none;
+   }
+}
+

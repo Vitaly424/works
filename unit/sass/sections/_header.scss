@@ -1,0 +1,173 @@
+.header {
+   @include bg-image("../img/bg/header.jpg");
+   background-color: #17244a;
+   
+   @media (max-width: $screen-lg) {
+      @include bg-image("../img/bg/header-1600.jpg");
+   }
+
+   @media (max-width: $screen-tablet) {
+      @include bg-image("../img/bg/header-900.jpg");
+   }
+   
+   @media (max-width: $screen-mobile) {
+      @include bg-image("../img/bg/header-600.jpg");
+   }
+   
+   @media (max-width: $screen-xs) {
+      @include bg-image("../img/bg/header-320.jpg"); 
+   }
+
+   &__wrapper {
+      position: relative;
+
+      padding-top: 60px;
+      padding-bottom: 100px;
+
+      color: #ffffff;
+
+      @media (max-width: $screen-tablet) {
+         padding-bottom: 50px;
+      }
+
+      @media (max-width: $screen-mobile) {
+         padding-top: 20px;
+      }
+
+      @media (max-width: $screen-xs) {
+         padding-bottom: 40px;
+      }
+   }
+
+   &__buttons {
+      max-width: 1200px;
+      padding-left: 15px;
+      padding-right: 15px;
+
+      display: flex;
+      justify-content: space-between;
+
+      margin-bottom: 140px;
+      margin-left: auto;
+      margin-right: auto;
+
+      @media (max-width: $screen-tablet) {
+         margin-bottom: 100px;
+      }
+
+      @media (max-width: $screen-mobile) {
+         margin-bottom: 30px;
+      }
+   }
+
+   &__content {
+      margin-bottom: 148px;
+      text-align: center;
+
+      @media (max-width: $screen-tablet) {
+         margin-bottom: 129px;
+      }
+
+      @media (max-width: $screen-mobile) {
+         margin-bottom: 80px;
+      }
+
+      @media (max-width: $screen-xs) {
+         margin-bottom: 50px;
+      }
+   }
+
+   &__title {
+      margin-bottom: 40px;
+
+      font-weight: 700;
+      font-size: 96px;
+      line-height: 1;
+
+      @media (max-width: $screen-tablet) {
+         margin-bottom: 35px;
+         font-size: 84px;
+      }
+
+      @media (max-width: $screen-mobile) {
+         margin-bottom: 30px;
+         font-size: 70px;
+      }
+   }
+  
+   &__desk {
+      max-width: 730px;
+
+      margin-left: auto;
+      margin-right: auto;
+
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 1.2;
+
+      & > p + p {
+         margin-top: 15px;
+      }
+
+      @media (max-width: $screen-tablet) {
+         margin-bottom: 50px;
+         font-size: 18px;
+      }
+
+      @media (max-width: $screen-mobile) {
+         max-width: 430px;
+         font-size: 16px;
+      }
+
+      @media (max-width: $screen-xs) {
+         margin-bottom: 35px;
+      }
+   }
+
+   &__form {
+      display: flex;
+      justify-content: center;
+
+      margin-top: 70px;
+
+      & > *:not(:last-child) {
+         margin-right: 20px;
+
+         @media (max-width: $screen-mobile) {
+            margin-right: 0;
+            margin-bottom: 20px;
+         }
+      }
+
+      @media (max-width: $screen-tablet) {
+         margin-top: 50px;
+      }
+
+      @media (max-width: $screen-mobile) {
+         max-width: 370px;
+
+         margin-left: auto;
+         margin-right: auto;
+
+         flex-direction: column;
+         align-items: stretch;
+      }
+
+      @media (max-width: $screen-xs) {
+         margin-top: 30px;
+      }
+   }
+
+   &__form-input {
+      width: 240px;
+
+      @media (max-width: $screen-mobile) {
+         width: 100%;
+      }
+   }
+  
+   &__scroll {
+      display: flex;
+      justify-content: center;
+   }
+}

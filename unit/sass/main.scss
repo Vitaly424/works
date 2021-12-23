@@ -1,0 +1,34 @@
+ 
+@import "./base/vars";
+@import "./base/mixins";
+@import "./base/fonts";
+@import "./base/base";
+
+// libs 
+@import "./libs/swiper.bundle.min.scss";
+@import "./libs/animate.min.scss";
+
+// sections
+@import "./sections/header";
+@import "./sections/footer";
+@import "./sections/clients";
+@import "./sections/cta";
+@import "./sections/focus";
+@import "./sections/functional";
+@import "./sections/price";
+@import "./sections/tasks";
+
+// blocks
+@import "./blocks/darkening-bg";
+@import "./blocks/button-round";
+@import "./blocks/input";
+@import "./blocks/button";
+@import "./blocks/title";
+@import "./blocks/subtitle";
+@import "./blocks/card";
+@import "./blocks/package";
+@import "./blocks/slider";
+@import "./blocks/slider-item";
+@import "./blocks/nav-icon";
+@import "./blocks/search";
+@import "./blocks/nav";

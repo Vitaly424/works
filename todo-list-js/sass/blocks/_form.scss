@@ -1,0 +1,16 @@
+.form {
+   display: flex;
+   justify-content: space-between;
+
+   @media (max-width: $screen-xs) {
+      flex-direction: column;
+   }
+
+   &__input {
+      margin-right: 20px;
+
+      @media (max-width: $screen-xs) {
+         margin-bottom: 15px;
+      }
+   }
+}

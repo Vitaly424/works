@@ -1,0 +1,15 @@
+.todo {
+   padding-top: 50px;
+   padding-bottom: 50px;
+
+   &__content {
+      min-height: 645px;      
+      padding: 20px;
+
+      background-color: #eef4ff;
+   }
+
+   &__form {
+      margin-bottom: 30px;
+   }
+}

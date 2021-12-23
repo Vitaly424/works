@@ -1,0 +1,131 @@
+.footer {
+   padding-top: 70px;
+   padding-bottom: 70px;
+
+   background-color: #1a1a1a;
+
+   @media (max-width: $screen-tablet) {
+      padding-top: 60px;
+      padding-bottom: 60px;  
+   }
+
+   @media (max-width: $screen-mobile) {
+      padding-top: 50px;
+      padding-bottom: 50px;
+   }
+
+   @media (max-width: $screen-xs) {
+      padding-top: 40px;
+      padding-bottom: 40px;  
+   }
+
+   &__row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      @media (max-width: $screen-mobile) {
+         flex-direction: column;
+      }
+   }
+
+   &__nav {
+      margin-right: 48px;
+
+      @media (max-width: $screen-mobile) {
+         margin-right: 0;
+         margin-bottom: 30px;
+      }
+
+      @media (max-width: $screen-xs) {
+         margin-bottom: 40px;
+      }
+   }
+
+   &__nav-item {
+      color: #ffffff;
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      font-weight: 700;
+
+      transition: color .2s linear;
+
+      &:not(:last-child) {
+         margin-right: 42px;
+
+         @media (max-width: $screen-xs) {
+            margin-right: 0;
+            margin-bottom: 18px;
+         }
+      }
+
+      &:hover {
+         color: #15d784;
+      }
+
+      @media (max-width: $screen-xs) {
+         display: block;
+      }
+   }
+
+   &__socials {
+      display: flex;
+      align-items: center;
+   }
+
+   &__socials-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      width: 48px;
+      height: 48px;
+      
+      background-color: rgba(#c4c4c4, .1);
+      border-radius: 50%;
+
+      transition: background-color .2s linear;
+
+      &:not(:last-child) {
+         margin-right: 30px;
+
+         @media (max-width: $screen-xs) {
+            margin-right: 20px;
+         }
+      }
+
+      &:hover {
+         background-color: #00c470;
+      }
+   }
+   
+   &__copyright {
+      margin-top: 50px;
+
+      text-align: center;
+      color: rgba(#ffffff, .3);
+      font-size: 14px;
+      line-height: 1.5;
+
+      span {
+         font-weight: 700;
+      }
+
+      @media (max-width: $screen-tablet) {
+         margin-top: 40px;
+      }
+      
+      @media (max-width: $screen-mobile) {
+         margin-top: 30px;
+      }
+
+      @media (max-width: $screen-xs) {
+         max-width: 200px;
+
+         margin-left: auto;
+         margin-right: auto;
+         margin-top: 40px;
+      }
+   }
+}

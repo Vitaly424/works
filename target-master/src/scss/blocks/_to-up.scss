@@ -1,0 +1,44 @@
+.to-up {
+   opacity: 0;
+   pointer-events: none;
+
+   position: fixed;
+   right: 40px;
+   bottom: 40px;
+   z-index: 100;
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   width: 50px;
+   height: 50px;
+
+   border-radius: 50%; 
+   background-color: #f9f025;
+
+   transition: background-color 0.2s linear, opacity 0.2s linear;
+
+   &--active {
+      opacity: 1;
+      pointer-events: auto;
+   }
+
+   @include hover {
+      background-color: darken(#f9f025, 20%);
+
+      svg {
+         fill: #ffffff;
+      }
+   }
+
+   svg {
+      transition: fill 0.2s linear;
+      fill: #000000;
+   }
+
+   @media (max-width: $screen-md) {
+      right: 20px;
+      bottom: 20px;
+   }
+}                                         

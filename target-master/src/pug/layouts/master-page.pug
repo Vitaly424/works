@@ -1,0 +1,28 @@
+include ../mixins/mixins
+
+block variables
+
+doctype html
+html(lang="ru")
+   head
+      include ../blocks/head
+   body 
+
+      include ../sections/header
+
+      main
+         block content  
+
+      // - popups
+      include ../blocks/popups/form-modal
+      include ../blocks/popups/case-modal1
+      include ../blocks/popups/case-modal2
+      include ../blocks/popups/case-modal3
+      include ../blocks/popups/case-modal4
+      include ../blocks/popups/success
+
+
+      include ../sections/footer 
+
+      block scripts
+         script(src = "./assets/js/main.js")

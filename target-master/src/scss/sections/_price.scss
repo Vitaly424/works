@@ -1,0 +1,232 @@
+.price {
+   position: relative;
+   margin-top: -41px;
+
+   padding-top: 170px;
+   padding-bottom: 170px;
+
+   border-radius: 60px;
+   background-color: #0F212D;
+
+   @media (max-width: $screen-lg) {
+      padding-top: 100px;
+      padding-bottom: 100px;
+   }
+
+   @media (max-width: $screen-md) {
+      padding-top: 50px;
+      padding-bottom: 50px;
+
+      border-radius: 25px;
+   }
+
+   @media (max-width: $screen-sm) {
+      padding-top: 30px;
+      padding-bottom: 30px;
+   }
+
+   &__title {
+      margin-bottom: 57px;
+      margin-right: 150px;
+      
+      text-align: right;
+
+      @media (max-width: $screen-md) {
+         margin-bottom: 35px;
+         text-align: left;
+      }
+
+      @media (max-width: $screen-xs) {
+         margin-right: 60px;
+      }
+   }
+
+   &__btn {
+      position: relative;
+      display: block;
+
+      padding-top: 10px;
+      padding-right: 72px;
+      padding-bottom: 13px;
+
+      max-width: 591px;   
+      width: 100%;
+       
+      font-weight: 700;
+      text-align: left;
+      font-size: 25px;
+      line-height: 1.4;
+      color: #ffffff;
+      
+      transition: color 0.2s linear;
+
+      @media (max-width: $screen-lg) {
+         font-size: 20px;
+      }
+
+      @include hover {
+         color: darken(#F9F025, 10%);
+      }
+
+      &:last-child {
+         padding-bottom: 0;
+      }
+
+      &--active {   
+         &::after {
+            content: "";   
+   
+            position: absolute;
+            right: -2px;
+            top: 0;
+   
+            background-color:  #F9F025;
+   
+            width: 4px;
+            height: 100%;
+         }
+      }  
+   }
+
+   &__inner {
+      display: flex;
+      align-items: flex-start;
+   }
+
+   &__list {
+      display: block;
+
+      max-width: 597px;
+      flex-shrink: 0;
+
+      border-right: thin solid #FFFFFF;
+
+      @media (max-width: $screen-md) {
+         display: none;
+         
+         max-width: 100%;
+         width: 100%;
+      }
+
+      &--mobile {
+         border-right: unset;
+         display: none;
+
+         .price__btn {
+            padding-top: 10px;
+            padding-bottom: 2px;
+            padding-right: 20px;
+
+            margin-bottom: 5px;
+         }
+
+         @media (max-width: $screen-md) {
+            display: block;
+         }
+      }
+   }
+
+   &__content {
+      margin-left: 55px;
+
+      @media (max-width: $screen-md) {
+         display: none;
+      }
+
+      @media (max-width: $screen-sm) {
+         margin-left: 20px;
+      }
+   }  
+
+   &__answers {
+      display: none;
+
+      &--active {
+         display: block;
+         animation: answers 1s;
+      }
+   }
+
+   &__answer {
+      max-width: 549px;
+
+      font-weight: 300;
+      font-size: 25px;
+      line-height: 1.6;
+      color: #FFFFFF;
+
+      @media (max-width: $screen-md) {
+         font-size: 16px;
+      }
+   }
+
+   &__info {
+      margin-top: 72px;
+
+      @media (max-width: $screen-md) {
+         margin-top: 45px;
+      }
+   }
+   
+   &__love {
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 1.4;
+      color: #4BC2D4;
+
+      @media (max-width: $screen-sm) {
+         font-size: 20px;
+      }
+   }
+
+   &__text {
+      margin-top: 24px;
+      max-width: 730px;
+
+      font-weight: 300;
+      font-size: 25px;
+      line-height: 1.6;
+      color: #4BC2D4;
+
+      @media (max-width: $screen-md) {
+         margin-top: 18px;
+      }
+
+      @media (max-width: $screen-sm) {
+         font-size: 18px;
+      }
+
+      span {
+         font-weight: 700;
+      }
+   }
+
+   &__phone {
+      color: #F9F025;
+      transition: color 0.2s linear;
+
+      @include hover {
+         color: #4BC2D4;
+      }
+   }
+
+   &__whatsap {
+      color: #4BC2D4;
+      transition: color 0.2s linear;
+
+      @include hover {
+         color: lighten(#4BC2D4, 15%);
+      }
+   }
+}
+
+@keyframes answers {
+   0% {
+      opacity: 0;
+      transform: scale(0.8) translateX(-50px);
+   }
+   100% {
+      opacity: 1;
+      transform: scale(1) translateX(0);
+   }
+}

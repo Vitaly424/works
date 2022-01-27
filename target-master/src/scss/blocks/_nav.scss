@@ -1,0 +1,45 @@
+.nav {
+   @media (max-width: $screen-md) {
+      display: flex;
+      flex-direction: column;
+
+      width: 100%;
+      padding: 20px;
+
+      position: fixed;
+      left: 0;
+      top: 0;
+
+      background-color: #ffffff;
+
+      opacity: 0;
+      transform: translateX(-100%) scale(0.5);
+
+      transition: transform 0.4s linear, scale 0.4s linear, opacity 0.4s linear;
+      
+      &--active {
+         z-index: 100;
+         opacity: 1;
+         transform: translateX(0) scale(1);
+      }
+   }
+
+   &__link {
+      font-size: 18px;
+      color: #000000;
+
+      transition: color 0.2s linear;
+
+      @include hover {
+         color: #ffffff;
+      }
+
+      &:not(:last-child) {
+         margin-right: 86px;
+
+         @media (max-width: $screen-lg) {
+            margin-right: 30px;
+         }
+      }
+   }
+}

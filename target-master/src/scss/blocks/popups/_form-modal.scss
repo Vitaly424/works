@@ -1,0 +1,77 @@
+.form-modal {
+   &__content {
+      position: relative;
+
+      max-width: 677px;
+      margin-left: auto;
+      margin-right: auto;
+
+      padding: 50px 70px;
+
+      border-radius: 50px;
+      background-color: #ffffff;
+      overflow: hidden;
+
+      @media (max-width: $screen-sm) {
+         border-radius: 32px;
+         border-radius: unset;
+      }  
+
+      @media (max-width: $screen-xs) {
+         padding: 50px 15px;
+      }  
+   }
+
+   &__text {
+      margin-bottom: 30px;
+
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 1.3;
+      color: #828282;
+   }
+
+   &__group {
+      display: block;
+
+      span {
+         margin-bottom: 5px;
+      }
+
+      &:not(:last-of-type) {
+         margin-bottom: 30px;
+      }
+   }
+
+   &__confidentiality {
+      max-width: 451px;
+      margin-top: 25px;
+
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 1.5;
+      color: #828282;
+
+      a {
+         text-decoration: underline;
+         color: #828282;
+      }
+   }
+
+   &__submit {
+      margin-top: 25px;
+
+      margin-left: auto;
+      margin-right: auto;
+   }
+
+   &__close {
+      &:focus {
+         outline: none;
+      }
+   }
+
+   .hystmodal__window {
+      background-color: transparent;
+   }
+}

@@ -1,0 +1,35 @@
+.success {
+   &__content {
+      padding: 20px;
+      
+      background-color: #ffffff;
+      border-radius: 15px;
+
+      overflow: hidden;
+   }
+   
+   &__title {
+      font-weight: 700;
+      font-size: 20px;
+   }
+
+   &__text {
+      font-size: 16px;
+      line-height: 1.3;
+   }
+
+   .hystmodal__window {
+      background-color: transparent;
+   }
+
+   .hystmodal__wrap {
+      padding-left: 15px;
+      padding-right: 15px;
+   }
+
+   .hystmodal__close {
+      &:focus {
+         outline: none;
+      }
+   }
+}

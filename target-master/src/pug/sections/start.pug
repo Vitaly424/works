@@ -1,0 +1,18 @@
+section.start
+   .container
+      .start__img
+         +picture("./assets/img/start/man.png", "./assets/img/start/man.webp", alt="Мужчина")
+      .start__content
+         h2.title.start__title Реклама в&nbsp;Facebook и&nbsp;Instagram доступна каждому
+         p.start__description Для простого старта достаточно <span>ссылки на ваш сайт</span> или <span>Instagram.</span>  Мы&nbsp;сами предложим текст, картинку и&nbsp;аудиторию.
+
+         form.start-form.js-form-start            
+            label.start-form__group 
+               span.start-form__title Cсылка на  сайт или Instagram 
+               input.start-form__input(type="text" name="link" data-validate-field="link")
+            
+            label.start-form__group
+               span.start-form__title Телефон для связи
+               input.start-form__input.js-telephone(type="tel" name="phone" placeholder="+7 (___) ___-__-__" data-validate-field="phone")
+
+            button.button.start__button(type="submit") Отправить

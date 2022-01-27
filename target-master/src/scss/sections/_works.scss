@@ -1,0 +1,31 @@
+.works {
+   padding-top: 126px;
+   padding-bottom: 146px;
+
+   @media (max-width:$screen-md) {
+      padding-top: 50px;
+      padding-bottom: 50px;
+   }
+
+   @media (max-width:$screen-xs) {
+      padding-top: 30px;
+      padding-bottom: 30px;
+   }
+
+   &__slider {
+      cursor: pointer;
+
+      @media (max-width: $screen-md) {
+         display: none;
+      }
+   }
+
+   &__title {
+      margin-bottom: 87px;
+      max-width: 1098px;
+
+      @media (max-width: $screen-md) {
+         margin-bottom: 25px;
+      }
+   }
+}

@@ -1,0 +1,29 @@
+.clients {
+   padding-top: 120px;
+   padding-bottom: 127px;
+
+   @media (max-width: $screen-md) {
+      padding-top: 50px;
+      padding-bottom: 50px;
+   }
+
+   @media (max-width: $screen-md) {
+      padding-top: 30px;
+      padding-bottom: 30px;
+   }
+
+   &__title {
+      margin-bottom: 63px;
+      
+      max-width: 949px;
+      margin-left: auto;
+      margin-right: auto;
+
+      text-align: center;
+
+      @media (max-width: $screen-md) {
+         margin-bottom: 30px;
+         max-width: 586px;
+      }
+   }
+}

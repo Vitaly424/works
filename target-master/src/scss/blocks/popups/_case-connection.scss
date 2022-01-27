@@ -1,0 +1,40 @@
+.case-connection {
+   margin-top: 68px;
+   padding-top: 62px;
+
+   border-top: thin solid #E0E0E0;
+
+   @media (max-width: $screen-sm) {
+      margin-top: 40px;
+      padding-top: 40px;
+   }
+
+   &__form {
+      max-width: 507px;
+
+      margin-top: 47px;
+      margin-left: auto;
+      margin-right: auto;
+
+      @media (max-width: $screen-sm) {
+         margin-top: 25px;
+      }
+   }
+
+ 
+   &__group {
+      display: block;
+      &:not(:last-child) {
+         margin-bottom: 30px;
+      }
+   }
+
+   &__confidentiality {
+      margin-top: 26px;
+
+      a {
+         text-decoration: underline;
+         color: #828282;
+      }
+   }
+}

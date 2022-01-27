@@ -1,0 +1,26 @@
+@mixin font-face($fontFamily, $weight, $style, $fontWoff2) {
+  @font-face {
+      font-family: $fontFamily;
+      src: url('../fonts/' + $fontWoff2) format('woff2');
+      font-weight: $weight;
+      font-style: $style;
+      font-display: swap;
+  }
+}
+ 
+@mixin hover() {
+   @media screen and (hover: hover) {
+     &:hover {
+       @content;
+     }
+   }
+}
+ 
+@mixin focus() {
+   @media screen and (hover: hover) {
+     &:focus {
+       @content;
+     }
+   }
+}
+ 

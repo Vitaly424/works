@@ -1,0 +1,101 @@
+.case-modal#case-modal3.hystmodal(aria-hidden='true')
+   .hystmodal__wrap
+      .hystmodal__container
+          
+         .hystmodal__window.case-modal__window(role='dialog' aria-modal='true')
+            button.case-modal__close(data-hystclose='')
+               +svgIcon(23, 23, "#i-close")
+            .case-modal__content
+               .case-header
+                  +picture("./assets/img/modal-cases/case3.png", "./assets/img/modal-cases/case3.webp")
+               .case-modal__container
+                  h2.title.title--small.case-modal__title <span>Заказчик</span> Сеть ресторанов итальянской кухни, <span>которые уже успешно вели контекстную рекламу.</span>
+                  .case-dignity.case-modal__dignity
+                     ul.case-dignity__list
+                        li.case-dignity__item 
+                           img(src="./assets/img/icons/plus.svg", alt="")
+                           p.case-dignity__text И&nbsp;при этом хотели протестировать новый рекламный канал в&nbsp;соцсетях.
+
+                  .case-tasks
+                     h3.case-name.case-modal__name <span>&excl;</span> Задача:
+                     ul.case-tasks__list 
+                        li.case-tasks__item 
+                           img(src="./assets/img/icons/plus-orange.svg", alt="")
+                           p.case-tasks__text Разработать и запустить рекламную кампанию в Instagram и Facebook.
+                  
+                  .case-purpose 
+                     h3.case-name.case-purpose__name Цель:
+                     ul.case-list--helps 
+                        li.case-list__item 
+                           p.case-list__description <span>Цена заявки</span> не&nbsp;должна превышать среднюю стоимость заявки<br />с&nbsp;<span class="hashtag">#контекстнойрекламы</span> &mdash; 846&nbsp;рублей. 
+                      
+ 
+                  .case-info
+                     h3.case-name.case-modal__name Общая информация:
+                     ul.case-info__list
+                        li.case-info__item 
+                           p.case-info__description <span>Продукт:</span> франшиза итальянского ресторана, консультация с&nbsp;менеджером
+                        li.case-info__item 
+                           p.case-info__description <span>Локация:</span> Россия.
+                        li.case-info__item 
+                           p.case-info__description  <span>Средняя стоимость вложений для открытия ресторана по&nbsp;франшизе:</span>  <span class="red">15&nbsp;млн.&nbsp;рублей</span> 
+                        li.case-info__item 
+                           p.case-info__description <span>Бюджет рекламной кампании:</span> <span class="red"> 55&nbsp;000&nbsp;рублей на&nbsp;две соцсети</span>
+                        li.case-info__item 
+                           p.case-info__description <span>Срок рекламной кампании:</span> <span class="red">1&nbsp;месяц</span>
+
+
+               .case-made
+                  h3.case-name.case-modal__name Было сделано:
+                  ul.case-list 
+                     li.case-list__item 
+                        span.case-number 1
+                        p.case-list__description Проанализирован <span class="hashtag">#рынок</span>.
+                     li.case-list__item 
+                        span.case-number 2
+                        p.case-list__description Составлены портреты целевой аудитории.
+                     li.case-list__item 
+                        span.case-number 3
+                        p.case-list__description Изучены предложения конкурентов.
+                     li.case-list__item 
+                        span.case-number 4
+                        p.case-list__description Подготовлены офферы для каждого целевого сегмента.
+                     li.case-list__item 
+                        span.case-number 5
+                        p.case-list__description Настроены <span class="hashtag">#целевыеаудитории</span> Facebook и&nbsp;Instagram.
+                     li.case-list__item 
+                        span.case-number 6
+                        p.case-list__description Подготовлены рекламные объявления с&nbsp;учетом проведенных анализов.
+                     li.case-list__item 
+                        span.case-number 7
+                        p.case-list__description Созданы рекламные кампании с&nbsp;целью лидогенерации.
+                  
+               .case-modal__container
+                  .case-result.case-result--helps 
+                     h3.case-name.case-modal__name Результат:
+                     ul.case-list 
+                        li.case-list__item 
+                           img(src="./assets/img/icons/plus.svg", alt="")
+                           p.case-list__description 119 лидов
+                        li.case-list__item 
+                           img(src="./assets/img/icons/plus.svg", alt="")
+                           p.case-list__description Средняя цена 1 лида составила 462&nbsp;рубля!
+                     .case-works 
+                        a.logo(href="/")
+                           img(src="./assets/img/logo.svg" alt="Логотип - таргет мастер")
+                        p.case-works__content Таргет-Мастер – 🎯 реклама, которая работает!
+
+                  .case-connection
+                     h3.case-name.case-name--center Хотите так&nbsp;же? Оставьте заявку и&nbsp;мы&nbsp;перезвоним        
+   
+                     form.case-connection__form.js-form3-case
+                        label.case-connection__group
+                           span.input-title *Ваше имя
+                           input.input(type="text" name="name" data-validate-field="name") 
+                     
+                        label.case-connection__group
+                           span.input-title *Телефон
+                           input.input.js-telephone(type="tel" name="phone" placeholder="+7 (___) ___-__-__" data-validate-field="phone")
+                     
+                        p.case-connection__confidentiality Нажимая на кнопку “Хочу так же”, вы выражаете свое  согласие на обработку персональных данных, определенных <a href="#">Политикой конфиденциальности</a> 
+                        button.button.form-modal__submit(type="submit") Хочу так же!

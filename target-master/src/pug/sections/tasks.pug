@@ -1,0 +1,43 @@
+section.tasks#tasks
+   .container
+      h2.title.title--white.tasks__title Для каждой задачи <span>своя реклама</span>
+
+      .tasks__tabs 
+         button.tasks__tab.tasks__tab--active(type="button" data-tab="#tasks-1") Фотореклама
+         button.tasks__tab(type="button" data-tab="#tasks-2") Видеореклама
+         button.tasks__tab(type="button" data-tab="#tasks-3") Реклама с кольцевой галереей
+
+      .tasks__box 
+         .tasks__content.tasks__content--active#tasks-1  
+            img.tasks__circle(src="./assets/img/tasks/circle.png", alt="")
+            .tasks__photo.tasks__photo--helps
+               +picture("./assets/img/tasks/photo-gallery.png", "./assets/img/tasks/photo-gallery.webp")
+            h3.tasks__name Фотореклама
+            p.tasks__text Этот простой формат рекламы поможет вам выгодно показать аудитории свою компанию или товары. 
+            ul.tasks__list 
+               li.tasks__item 
+                  p фото могут быть в квадратном
+               li.tasks__item 
+                  p горизонтальном 
+               li.tasks__item 
+                  p или вертикальном форматах
+
+            button.button.tasks__button(type="button" data-hystmodal="#form-modal") Запустить рекламу
+         .tasks__content#tasks-2  
+            img.tasks__circle(src="./assets/img/tasks/circle.png", alt="")
+            .tasks__photo.tasks__photo--helps
+               +picture("./assets/img/tasks/photo-video.png", "./assets/img/tasks/photo-video.webp")
+            h3.tasks__name Видеореклама
+            p.tasks__text Этот формат позволяет усилить преимущества фоторекламы движением и звуком. 
+            ul.tasks__list 
+               li.tasks__item 
+                  p Теперь вы можете делиться видео длительностью до 60 секунд.
+           
+            button.button.tasks__button(type="button" data-hystmodal="#form-modal") Запустить рекламу
+         .tasks__content.tasks__content--ring#tasks-3
+            img.tasks__circle(src="./assets/img/tasks/circle.png", alt="")
+            .tasks__photo
+               +picture("./assets/img/tasks/photo-ring.png", "./assets/img/tasks/photo-ring.webp")
+            h3.tasks__name Реклама <br> с кольцевой галереей
+            p.tasks__text Этот формат позволяет разместить в объявлении сразу несколько фото или видео, чтобы в рамках одной кампании показать своей аудитории больше.        
+            button.button.tasks__button(type="button" data-hystmodal="#form-modal") Запустить рекламу

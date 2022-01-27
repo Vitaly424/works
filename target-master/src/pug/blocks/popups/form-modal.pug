@@ -1,0 +1,21 @@
+.form-modal#form-modal.hystmodal(aria-hidden='true')
+   .hystmodal__wrap
+      .hystmodal__window(role='dialog' aria-modal='true')
+         button.form-modal__close.hystmodal__close(data-hystclose='' aria-label="close modal") dsgsdfgsdg  
+         form.form-modal__content.js-form-modal-validate
+            p.form-modal__text Работаем с клиентами по всей России        
+
+            label.form-modal__group
+               span.input-title *Ссылка на сайт или Instagram
+               input.input(type="text" name="link" data-validate-field="link") 
+         
+            label.form-modal__group
+               span.input-title *Ваше имя
+               input.input(type="text" name="name" data-validate-field="name") 
+         
+            label.form-modal__group
+               span.input-title *Телефон
+               input.input.js-telephone(type="tel" name="phone" placeholder="+7 (___) ___-__-__" data-validate-field="phone")
+            
+            p.form-modal__confidentiality Нажимая на кнопку “Отправить”, вы выражаете свое  согласие на обработку персональных данных, определенных <a href="#">Политикой конфиденциальности</a> 
+            button.button.form-modal__submit(type="submit") Отправить

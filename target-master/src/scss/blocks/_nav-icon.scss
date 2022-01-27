@@ -1,0 +1,91 @@
+.nav-icon {
+   display: none;
+   height: 20px;
+
+   justify-content: center;
+   align-items: center;
+
+   cursor: pointer;
+
+   span {
+      display: block;
+   }
+
+   @media (max-width: $screen-md) {
+      display: flex;
+   }
+
+   @media (max-width: $screen-xs) {
+      margin-left: 10px;
+      order: 1;
+   }
+}
+
+.nav-icon--mobile {
+   display: none;
+   position: absolute;
+
+   right: 20px;
+   top: 20px;
+
+   @media (max-width: $screen-md) {
+      display: block;
+   }
+
+   .nav-icon__middle {
+      background-color: #000000;
+
+      &::before, &::after {
+         background-color: #000000;
+      }
+   }
+}
+
+.nav-icon__middle {
+   position: relative;
+
+   width: 25px;
+   height: 4px;
+   
+   background-color: #fff;
+
+   &::before, &::after {
+       content: "";
+
+       position: absolute;
+       left: 0;
+
+       width: 100%;
+       height: 100%;
+
+       transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+       background-color: rgb(255, 255, 255);
+   }
+
+   &::before {
+       top: -7px;
+   }
+
+   &::after {
+       top: 7px;
+   }
+}
+
+/* Active state */
+
+.nav-icon.nav-icon--active .nav-icon__middle {
+   background-color: transparent;
+
+   &::before, &::after {
+       top: 0;
+       transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+   }
+
+   &::before {
+       transform: rotate(45deg);
+   }
+
+   &::after {
+       transform: rotate(-45deg);
+   }
+}

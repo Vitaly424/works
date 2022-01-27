@@ -1,0 +1,38 @@
+.case-tasks {
+   padding-bottom: 40px;
+   padding-top: 40px;
+
+   border-top: thin solid #E0E0E0;
+   border-bottom: thin solid #E0E0E0;
+
+   font-weight: 700;
+   font-size: 25px;
+   line-height: 1.4;
+
+   @media (max-width: $screen-sm) {
+      padding-bottom: 20px;
+      padding-top: 20px;
+   }
+
+   &__text {
+      margin-left: 17px;
+
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 1.3;
+      color: #333333;
+   }
+
+   &__item {
+      display: flex;
+      align-items: flex-start;
+
+      &:not(:last-child) {
+         margin-bottom: 11px;
+      }
+   }
+
+   &--helps {
+      border-bottom: none;
+   }
+}

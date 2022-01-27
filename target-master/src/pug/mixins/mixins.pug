@@ -1,0 +1,12 @@
+mixin svgIcon(width, height, id, fill)
+  svg(
+    width=width
+    height=height
+    fill=fill
+  )
+    use(xlink:href="assets/img/icons/icons-sprite.svg" + id)
+
+mixin picture(urlDefault, urlWebp, description = "")
+  picture.lazy-half 
+    source(srcset=urlWebp type="image/webp")
+    img.rogano-lazy.lazy-half(data-src=urlDefault src="./assets/img/placeholder/1x1.png" alt=description)

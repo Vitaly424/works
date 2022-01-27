@@ -1,0 +1,18 @@
+section.clients 
+   .container 
+      h2.title.clients__title Новым клиентам&nbsp;&mdash; бесплатный аудит и&nbsp;разбор рекламной стратегии
+      form.form-clients.js-form-clients-validate
+         h3.form-clients__title Работаем с клиентами по всей России
+
+         .form-clients__group    
+            label(for="name") *Ваше имя
+            .form-clients__box
+               input(type="text" id="name" name="name" data-validate-field="name") 
+
+         .form-clients__group    
+            label(for="client-phone") *Телефон
+            .form-clients__box
+               input.js-telephone(type="tel" id="client-phone"  placeholder="+7 (___) ___-__-__" name="phone"  data-validate-field="phone") 
+
+         p.form-clients__confidentiality Нажимая на&nbsp;кнопку &laquo;Оставить заявку&raquo;, я&nbsp;даю свое согласие на&nbsp;обработку персональных данных, определенных <a href="#">Политикой конфиденциальности</a>
+         button.button.form-clients__button Оставить заявку

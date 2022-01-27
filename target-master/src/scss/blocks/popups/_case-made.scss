@@ -1,0 +1,23 @@
+.case-made {
+   padding-top: 40px;
+   padding-bottom: 40px;
+   padding-left: 70px;
+   padding-right: 70px;
+
+   background-color: #EFF2F5;
+   border-radius: 60px;
+
+   @media (max-width: $screen-md) {
+      padding-left: 30px;
+      padding-right: 30px;
+
+      border-radius: 30px;
+   }
+
+   @media (max-width: $screen-xs) {
+      padding-left: 15px;
+      padding-right: 15px;
+
+      border-radius: 10px;
+   }
+}

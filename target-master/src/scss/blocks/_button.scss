@@ -1,0 +1,83 @@
+.button {
+   position: relative;
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   width: 300px;
+   height: 59px;
+
+   background-color: #F9F025;
+   border-radius: 10px;
+
+   font-weight: 700;
+   font-size: 20px;
+   text-align: center;
+   color: #000000;
+
+   transition: background-color 0.2s linear;
+
+   @include hover {
+      background-color: darken(#F9F025, 10%)
+   }
+
+   @media (max-width: $screen-md) {
+      font-size: 16px;
+
+      width: 198px;
+      height: 43px;
+   }
+
+   &--small {
+      width: 223px;
+      height: 50px;
+
+      @media (max-width: $screen-md) {
+         width: 198px;
+         height: 43px;
+      }
+   }
+
+   &--disabled {
+      opacity: 0.6;
+      cursor: default;
+
+      @include hover {
+         background-color: #F9F025;
+      }
+
+      &::after {
+         content: "";
+         display: block;
+   
+         position: absolute;
+         right: 20px;
+         top: 21px;
+      
+         width: 20px;
+         height: 20px;
+         
+         border: 3px solid transparent;
+         border-left: 3px solid #000;
+         border-right: 3px solid #000;
+         border-bottom: 3px solid #000;
+         border-right: 50px;
+         border-radius: 50px;
+      
+         animation: spin 1s linear infinite;
+      
+         @media (max-width: $screen-md) {
+            width: 15px;
+            height: 15px;
+
+            top: 15px;
+         }
+      }
+   }
+}
+
+@keyframes spin {
+   from {transform: rotate(0deg); } 
+   to {transform: rotate(360deg);}
+}

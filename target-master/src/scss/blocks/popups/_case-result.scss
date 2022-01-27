@@ -1,0 +1,18 @@
+.case-result {
+   padding-top: 40px;
+   padding-bottom: 40px;
+
+   .case-name--small {
+      margin-bottom: 20px;
+   }
+
+   &__col {
+      &:not(:last-child) {
+         margin-bottom: 20px;
+      }
+   }
+
+   &--helps {
+      padding-bottom: 0;
+   }
+}

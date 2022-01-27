@@ -1,0 +1,36 @@
+.case-info {
+   max-width: 688px;
+
+   padding-top: 40px;
+   padding-bottom: 30px;
+
+   @media (max-width: $screen-sm) {
+      padding-top: 20px;
+      padding-bottom: 20px;
+   }
+
+   &--helps {
+      padding-bottom: 0;
+      max-width: unset;
+   }
+
+   &__item {
+      &:not(:last-child) {
+         margin-bottom: 2px;
+      }
+   }
+
+   &__description {
+      font-size: 18px;
+      line-height: 1.3;
+      color: #333333;
+      
+      span {
+         font-weight: 700;
+
+         &.red {
+            color: #ee5252;
+         }
+      }
+   }
+}

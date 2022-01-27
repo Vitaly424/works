@@ -1,0 +1,38 @@
+header.header#header.js-header
+   .container
+      .header__top
+         .header__img
+            +picture("./assets/img/header/telephone-arrow.png", "./assets/img/header/telephone-arrow.webp")
+         a.logo.header__logo(href="/")
+            img(src="./assets/img/logo.svg" alt="Логотип - таргет мастер")
+
+         button.nav-icon.js-nav-open 
+            span.nav-icon__middle
+
+         nav.nav
+            a.nav__link(href="#works") Кейсы
+            a.nav__link(href="#tasks") Примеры размещения
+            a.nav__link(href="#price") Немного о цене
+            button.nav-icon.js-nav-close.nav-icon--mobile.nav-icon--active   
+               span.nav-icon__middle
+
+         button.button.button--small(data-hystmodal="#form-modal" type="button") Запустить рекламу
+
+      .header__intro 
+         h1.header__title Заявки через  <span>10 дней,</span><br> или вернём деньги!
+         p.header__text Технологии нейросетей<br> Instagram и&nbsp;Facebook найдут ваших клиентов
+         button.button(data-hystmodal="#form-modal" type="button") Запустить рекламу
+
+         .header__advertising
+            h3.header__does <span>Умная реклама</span><br> работает на вас
+
+            ul.header__list 
+               li.header__item   
+                  +svgIcon(33, 33, "#i-plus")
+                  p.header__content Приводит клиентов
+               li.header__item  
+                  +svgIcon(33, 33, "#i-plus") 
+                  p.header__content Продает товары и&nbsp;услуги
+               li.header__item   
+                  +svgIcon(33, 33, "#i-plus")
+                  p.header__content Возвращает клиентов за&nbsp;новыми покупками

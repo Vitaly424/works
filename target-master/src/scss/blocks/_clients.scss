@@ -7,15 +7,15 @@
       padding-bottom: 50px;
    }
 
-   @media (max-width: $screen-md) {
+   @media (max-width: $screen-sm) {
       padding-top: 30px;
       padding-bottom: 30px;
    }
 
    &__title {
-      margin-bottom: 63px;
-      
       max-width: 949px;
+      
+      margin-bottom: 63px;
       margin-left: auto;
       margin-right: auto;
 
